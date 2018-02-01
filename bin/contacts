@@ -13,9 +13,11 @@ contacts = {
    }
  }
 
-contacts.each do |person, contact_details_hash|
-   binding.pry
-end
+ contacts.each do |person, contact_details_hash|
+   contact_details_hash.each do |attribute, data|
+     binding.pry
+   end
+ end
 puts remove_strawberry(contacts)
 
 #To run this file, in the terminal type: ruby bin/contacts
